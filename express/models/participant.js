@@ -1,10 +1,10 @@
 
 
 const participant = new mongoose.schema({
-Lastname {},
-Firstname{},
-Address{},
-Email{},
-Timestamp{type: date, default date.now},
-ParticipantType{},
+LastName{type: string},
+FirstName{type: string},
+Address{type: number},
+Email{type: string},
+TimeStamp{type: date, default: date.now},
+ParticipantType{type: string},
 })
