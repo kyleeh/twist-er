@@ -1,7 +1,10 @@
 const mongoose = require ('mongoose')
+var Schema = mongoose.Schema;
 
-
-const participant = new mongoose.schema({
+const room = new mongoose.schema({
     Building: {type:string},
     Capacity: {type: number},
-    })
+    });
+
+//Export model
+module.exports = mongoose.model ('room', roomSchema);

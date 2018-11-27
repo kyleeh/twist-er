@@ -1,7 +1,11 @@
 const mongoose = require ('mongoose')
+var Schema = mongoose.Schema;
 
-
-const participant = new mongoose.schema({
+const schedule = new mongoose.schema({
     TopicCode: {},
     PresenterID: {},
-    })
+    });
+
+
+//Export model
+module.exports = mongoose.model ('schedule', scheduleSchema);
